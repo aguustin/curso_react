@@ -20,6 +20,7 @@ function Register() {
     try {
       await createUserWithEmailAndPassword(auth, email, password)
       // Si el registro sale bien, mandamos al usuario a la app.
+      console.log(auth, email, password)
       navigate('/tasks')
     } catch (err) {
       setError('No se pudo crear la cuenta. Revisá el email y la contraseña.')

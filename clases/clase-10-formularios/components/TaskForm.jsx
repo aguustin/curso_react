@@ -12,7 +12,6 @@ function TaskForm({ onAddTask }) {
 
   function handleSubmit(event) {
     event.preventDefault()
-
     // Validación simple: no agregar tareas vacías.
     if (title.trim() === '') {
       return
@@ -28,6 +27,7 @@ function TaskForm({ onAddTask }) {
         type="text"
         placeholder="Nueva tarea..."
         value={title}
+        name="campo1"
         onChange={(event) => setTitle(event.target.value)}
       />
       <button type="submit">Agregar</button>

@@ -6,7 +6,7 @@ function Home() {
       <h1>Bienvenido/a a Mis Tareas</h1>
       <p>Esta es una aplicación simple para practicar React desde cero.</p>
       <p>
-        Ir a <Link to="/tasks">la lista de tareas</Link>.
+        Ir a <Link  to="/tasks">la lista de tareas</Link>.
       </p>
     </section>
   )
